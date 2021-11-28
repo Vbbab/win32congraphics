@@ -1,6 +1,7 @@
 # Win32 Console Graphics
 (Hacky) 24-bit color native resolution graphics in the console!
 
+**Please note:** currently, the library is *not* header-only. Therefore, when compiling, you might as well put everything in `include/` in a subdirectory (let's say `inc/`) in your project, then when compiling, compile both *your main source file* **and** `inc/win32congraphics.cpp`. *(In the future, the library will be packed into a single header and you will only have to deal with including the header itself.)*
 
 ## Example usage
 ```c++
