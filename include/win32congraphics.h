@@ -28,3 +28,4 @@ namespace w32cg {
 		void render();
 	};
 }
+#include "win32congraphics.cpp" // Hacky way to get around having to manually compile .cpp?

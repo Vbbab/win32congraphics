@@ -1,4 +1,3 @@
-#include "win32congraphics.h"
 #include <Windows.h>
 #include <iostream>
 #include <cmath>
@@ -66,6 +65,7 @@ namespace w32cg {
 	void GraphicsObject::render() {
 		for (int i = 0; i < pbuf.size(); i++) {
 			SetPixel(c_HDC, pbuf[i].x, pbuf[i].y, pbuf[i].color);
+			//Sleep(1); // Animation!
 		}
 	}
 }
